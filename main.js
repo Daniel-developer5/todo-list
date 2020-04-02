@@ -6,7 +6,7 @@ let todoList = document.getElementsByClassName("todo-list")[0]
 let form = document.getElementsByTagName("form")[0]
 let input = document.getElementsByClassName("input")[0]
 let ul = document.getElementsByTagName("ul")[0]
-let todos = []
+let todos = JSON.parse(localStorage.getItem("todos")) || []
 let plus = document.getElementsByClassName("add-box")[0]
 
 toggle.addEventListener('click', () => {
